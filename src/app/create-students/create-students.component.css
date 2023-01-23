@@ -1,0 +1,15 @@
+label{
+    color:rgb(12, 11, 9);
+    width: 150px;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 150px;
+    font-size:21px;
+}
+button{
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 250px;
+    background-color: black;
+    color: whitesmoke;
+}

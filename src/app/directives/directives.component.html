@@ -1,0 +1,43 @@
+<p>directives works!</p>
+<h1>hello</h1>
+<h1>my name is sunil</h1>
+<h1 *ngFor="let age of ages">{{age}}</h1>
+<h1><ol>
+    <li *ngFor="let month of months">{{month}}</li>
+</ol>
+</h1>
+<select name="" id="">
+    <option value="" *ngFor="let state of states">{{state}}</option>
+</select>
+<h1 *ngFor="let user of user">their name is  {{user.name}} and their age is{{user.age}}</h1>
+<table border="1">
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of user">
+            <td [ngStyle]="{'color':user.age>40?'orange':'yellow'}">{{user.name}}</td>
+            <td [ngClass]="{'red':user.age>40,'green':user.age<40}">{{user.age}}</td>
+        </tr>
+    </tbody>
+</table>
+<th>
+<table class="ok" border="1">
+    <thead>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Rating</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.name}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.quantity}}</td>
+            <td>{{product.rating}}</td>
+                
+        </tr>
+    </tbody>
+</table>
+</th>

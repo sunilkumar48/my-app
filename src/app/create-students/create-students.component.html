@@ -1,0 +1,24 @@
+<form [formGroup]="studentform">
+    <label for="">name</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label for="">city</label>
+    <input type="text" formControlName="city">
+    <br>
+    <label for="">phone</label>
+    <input type="text" formControlName="phone">
+    <br>
+    <label for="">address</label>
+    <input type="text" formControlName="address">
+    <br>
+    <label for="">photo</label>
+    <input type="text" formControlName="photo">
+    <br>
+    <label for="">placedin</label>
+    <input type="text" formControlName="placedin">
+    <br>
+    <label for="">salary</label>
+    <input type="text" formControlName="salary">
+    
+</form>
+<button (click)="submit()">submit</button>

@@ -1,0 +1,16 @@
+<h1>CARS</h1>
+
+
+<label for="">Brand</label>
+<input type="radio" name="brand"  [(ngModel)]="brand" value="honda">
+<label for="">Honda</label>
+<input type="radio" name="brand" [(ngModel)]="brand" value="kia">
+<label for="">Kia</label>
+<input type="radio" name="brand" [(ngModel)]="brand" value="tata">
+<label for="">tata</label>
+<br>
+<img *ngIf="brand=='honda'" src="/assets/honda.jpeg" alt="">
+<br>
+<img *ngIf="brand=='kia'" src="/assets/kia.webp" alt="">
+<br>
+<img *ngIf="brand=='tata'" src="/assets/download.jpeg" alt="">

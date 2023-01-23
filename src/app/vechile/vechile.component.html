@@ -1,0 +1,68 @@
+<input type="text"[(ngModel)]="term" style="width: 20%;height: 50px;">
+<button (click)="filter()" style="background-color: white; width: 20%; height: 52px;">search</button>
+
+<select [(ngModel)]="column" style="height: 50px;">
+        <option>Vehicle</option>
+        <option>manufacturer</option>
+        <option>model</option>
+        <option>type</option>
+        <option>fuel</option>
+        <option>color</option>
+        <option>image</option>
+        <option>id</option>
+</select>
+<select [(ngModel)]="order" style="height: 50px;">
+    <option value="">asc</option>
+    <option value="">desc</option>
+</select>
+<button (click)="sort()" style="height: 55px; width: 10%;">sort</button>
+<table class="table table-dark">
+    <thead>
+        <th>Vehicle</th>
+        <th>manufacturer</th>
+        <th>model</th>
+        <th>type</th>
+        <th>fuel</th>
+        <th>color</th>
+        <th>image</th>
+        <th>delete</th>
+        <th>id</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let vehicle of vehicles">
+            <td>{{vehicle.Vehicle}}</td>
+            <td>{{vehicle.manufacturer}}</td>
+            <td>{{vehicle.model}}</td>
+            <td>{{vehicle.type}}</td>
+            <td>{{vehicle.fuel}}</td>
+            <td>{{vehicle.color}}</td>
+            <td>
+                <img src="{{vehicle.image}}" alt="" height="100px" width="100px">
+            </td>
+            <td><button (click)="delete(vehicle.id)">delete</button></td>
+            <td>{{vehicle.id}}</td>
+        </tr>
+    </tbody>
+</table>
+<select [(ngModel)]="limit" >
+    <option>5</option>
+    <option>10</option>
+    <option>15</option>
+    <option>20</option>
+</select>
+<ul class="pagination">
+  
+  <li class="page-item" (click)="page(1)"><a class="page-link">1</a></li>
+  <li class="page-item" (click)="page(2)"><a class="page-link">2</a></li>
+  <li class="page-item"(click)="page(3)"><a class="page-link">3</a></li>
+  <li class="page-item"(click)="page(4)"><a class="page-link">4</a></li>
+  <li class="page-item"(click)="page(5)"><a class="page-link">5</a></li>
+  <li class="page-item"(click)="page(6)"><a class="page-link">6</a></li>
+  <li class="page-item" (click)="page(7)"><a class="page-link">7</a></li>
+  <li class="page-item" (click)="page(8)"><a class="page-link">8</a></li>
+  <li class="page-item"(click)="page(9)"><a class="page-link">9</a></li>
+  <li class="page-item"(click)="page(10)"><a class="page-link">10</a></li>
+  <li class="page-item"(click)="page(11)"><a class="page-link">11</a></li>
+  <li class="page-item"(click)="page(12)"><a class="page-link">12</a></li>
+  
+</ul>

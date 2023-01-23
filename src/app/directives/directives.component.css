@@ -1,0 +1,12 @@
+.ok{
+    border: 1px solid blue;
+    color: rgb(36, 234, 18);
+}
+.red{
+    color: red;
+    background-color: black;
+}
+.green{
+    color: red;
+    background-color: cornsilk;
+}

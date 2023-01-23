@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+
+}
+.parent{
+    background-color: cadetblue;
+    text-align: center;
+    margin-top: 250px;
+    padding: 50px;
+    border-radius: 25px;
+    width: 400px;
+    margin-left: 350px;
+    height: 450px;
+    margin-top:200px;
+}
+input{
+    width: 90%;
+    display: flex;
+    padding: 5px;
+    margin: 2px;
+}
+label{
+    color: darkblue;
+}
+button{
+    width: 100px;
+    margin: 15px;
+}
+

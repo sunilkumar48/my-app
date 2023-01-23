@@ -1,0 +1,14 @@
+
+<div class="parent">
+    <h1>rectangle</h1>
+    <label for="number">length:</label>
+    <input type="number" [(ngModel)]="length">
+    <br>
+    <label for="number">base: </label>
+    <input type="number" [(ngModel)]="base">
+    <br>
+    <button (click)="mul()">area</button>
+    <button (click)="mul2()">perimeter</button>
+    <h1>result is {{result}}</h1>
+</div>
+

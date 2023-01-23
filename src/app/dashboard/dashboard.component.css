@@ -1,0 +1,46 @@
+.parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: cadetblue;
+    display: flex;
+    
+}
+.left{
+    height: 100vh;
+    width: 25vw;
+    background-color: powderblue;
+    overflow: auto;
+}
+.right{
+    background-color: rgb(189, 172, 199);
+    width: 75vw;
+    height: 100vh;
+    overflow: auto;
+}
+h4{
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+button{
+    
+    size: 5px;
+    background-color: rgb(120, 192, 240);
+    display: flex;
+    justify-content: center;
+    font-size: 600;
+    width: 80%;
+    padding: 10px;
+    margin: 35px;
+}
+h4:hover{
+    background-color: crimson;
+    
+}
+button:hover{
+    background-color: rgb(241, 86, 199);
+    
+}

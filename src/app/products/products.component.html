@@ -1,0 +1,23 @@
+<h1 style="text-align: center; color:green;">Products</h1>
+<div *ngFor="let product of products" class="parent">
+    
+    <div class="d-flex parent1  ">
+      <div class="image">
+        <img src="{{product.image}}" alt="" height="200px" width="200px">
+      </div>
+      <div class=" design">
+            <p>{{product.id}}</p>
+            <p>{{product.title}}</p>
+            <p>{{product.price}}</p>
+            <p>{{product.desciption}}</p>
+            
+            <p>{{product.category}}</p>
+            <p>{{product.rating.rate}}</p>
+            <p>{{product.rating.count}}</p>
+
+
+        </div>
+      </div>
+    </div>
+    
+

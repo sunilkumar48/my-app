@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    color: rgb(111, 233, 35);
+}
+.parent{
+    background-color: rgb(235, 213, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.form{
+    text-align: center;
+    background-color: darkgoldenrod;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    width: 350px;
+    height: 400px;
+}
+input{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 5px;
+    display: flex;
+}
+input:hover{
+    background-color: aqua;
+}
+button{
+    background-color: bisque;
+    padding: 5px;
+    margin: 15px;
+    width: 55px;
+}
+button:hover{
+    background-color: rgb(65, 157, 237);
+}
