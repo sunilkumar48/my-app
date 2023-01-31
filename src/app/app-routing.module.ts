@@ -29,6 +29,7 @@ import { ParentComponent } from './parent/parent.component';
 import { ProductComponent } from './product/product.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { CartComponent } from './cart/cart.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 
 
@@ -62,8 +63,8 @@ const routes: Routes = [
     {path:"parent",component:ParentComponent},
     {path:"product",component:ProductComponent},
     {path:"navigator",component:NavigatorComponent},
-    {path:"cart",component:CartComponent}
-    
+    {path:"cart",component:CartComponent},
+    {path:"about-company",component:AboutCompanyComponent},    
     
   ]},
   {path:'',component:LoginComponent},
