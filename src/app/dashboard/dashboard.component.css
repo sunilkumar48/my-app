@@ -37,10 +37,12 @@ button{
     margin: 35px;
 }
 h4:hover{
-    background-color: crimson;
-    
+    background-color: rgb(113, 239, 106);
+    width:90%;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 50px;
 }
 button:hover{
-    background-color: rgb(241, 86, 199);
+    background-color: rgb(211, 46, 167);
     
 }

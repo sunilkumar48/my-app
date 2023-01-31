@@ -1,8 +1,8 @@
-<input type="text"[(ngModel)]="term" style="width: 20%;height: 50px;">
-<button (click)="filter()" style="background-color: white; width: 20%; height: 52px;">search</button>
+<input type="text"[(ngModel)]="term" style="width: 20%;height: 50px;position: sticky;top: 0%;" placeholder="click here to search">
+<button (click)="filter()" style="background-color: white; width: 20%; height: 52px;position: sticky;top: 0%;">search</button>
 
-<select [(ngModel)]="column" style="height: 50px;">
-        <option>Vehicle</option>
+<select [(ngModel)]="column" style="height: 55px; padding: 10px; margin: 5px;position: sticky;top: 0%;"  >
+        <option>vehicle</option>
         <option>manufacturer</option>
         <option>model</option>
         <option>type</option>
@@ -11,14 +11,14 @@
         <option>image</option>
         <option>id</option>
 </select>
-<select [(ngModel)]="order" style="height: 50px;">
+<select [(ngModel)]="order" style="height: 55px; width: 10%;position: sticky;top: 0%;">
     <option value="">asc</option>
     <option value="">desc</option>
 </select>
-<button (click)="sort()" style="height: 55px; width: 10%;">sort</button>
+<button (click)="sort()" style="height: 55px; width: 10%;position: sticky;top: 0%;">sort</button>
 <table class="table table-dark">
     <thead>
-        <th>Vehicle</th>
+        <th>vehicle</th>
         <th>manufacturer</th>
         <th>model</th>
         <th>type</th>
@@ -30,7 +30,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let vehicle of vehicles">
-            <td>{{vehicle.Vehicle}}</td>
+            <td>{{vehicle.vehicle}}</td>
             <td>{{vehicle.manufacturer}}</td>
             <td>{{vehicle.model}}</td>
             <td>{{vehicle.type}}</td>
@@ -39,7 +39,11 @@
             <td>
                 <img src="{{vehicle.image}}" alt="" height="100px" width="100px">
             </td>
-            <td><button (click)="delete(vehicle.id)">delete</button></td>
+            <td>
+                <button (click)="delete(vehicle.id)">delete</button>
+                <button (click)="view(vehicle.id)">view</button>
+                <button (click)="edit(vehicle.id)">edit</button>
+            </td>
             <td>{{vehicle.id}}</td>
         </tr>
     </tbody>

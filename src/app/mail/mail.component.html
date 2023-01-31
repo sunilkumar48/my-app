@@ -1,0 +1,14 @@
+<div *ngFor="let mail of mail" >
+ <div *ngIf="mail.completed == true">   
+    <h5>{{mail.userid}}</h5>
+    <h5>{{mail.title}}</h5>
+    <h5>{{mail.id}}</h5>
+</div>
+
+<div *ngIf="mail.completed == false"[ngStyle]=>   
+    <h5>{{mail.userid}}</h5>
+    <h5>{{mail.title}}</h5>
+    <h5>{{mail.id}}</h5>
+</div>
+  
+</div>

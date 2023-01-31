@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { VechileService } from '../vechile.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class VechileComponent {
   public term:any=[];
   
 
-  constructor(private _vechileService:VechileService){
+  constructor(private _vechileService:VechileService,private _router:Router){
     _vechileService.getVehicles().subscribe(
       (data:any)=>{
         this.vehicles=data;
@@ -67,6 +68,14 @@ export class VechileComponent {
         alert("internal server error");
       }
     )
+  }
+  view(id:any){
+    this._router.navigateByUrl("/dashboard/vehicle-details/"+id)
+
+  }
+  edit(id:any){
+    this._router.navigateByUrl("/dashboard/edit-vehicle/"+id)
+
   }
 
 }

@@ -1,0 +1,48 @@
+
+.ok{
+    color:rgb(3, 3, 92);
+    width:80px;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-left: 350px;
+    font-size: 20px;
+}
+button{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 400px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 20px;
+}
+label{
+    margin-left:10px;
+    width: 100px;
+    color:rgb(3, 3, 92);
+    font-size: 20px;
+    font-weight: 700
+}
+.ko{
+    width: 150px;
+    margin-top: 40px;
+    margin-left: 420px;
+    background-color: rgb(142, 4, 117);
+    color: whitesmoke;
+    padding: 10px;
+
+}
+.h{
+   margin-left: 100px;
+}
+.l{
+    width: 150px;
+    margin-top: 30px;
+    margin-left: 400px;
+    background-color: rgb(141, 207, 8);
+    color: whitesmoke;
+    padding: 10px;
+    
+}  
+.l:hover{
+    background-color: rgb(148,13,13);
+}

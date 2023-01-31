@@ -21,6 +21,14 @@ import { StudentComponent } from './student/student.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateStudentsComponent } from './create-students/create-students.component';
 import { AdavancecalculatorComponent } from './adavancecalculator/adavancecalculator.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { MailComponent } from './mail/mail.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { ParentComponent } from './parent/parent.component';
+import { ProductComponent } from './product/product.component';
+import { NavigatorComponent } from './navigator/navigator.component';
+import { CartComponent } from './cart/cart.component';
 
 
 
@@ -28,7 +36,7 @@ import { AdavancecalculatorComponent } from './adavancecalculator/adavancecalcul
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent,children:[
+  {path:'dashboard',component:DashboardComponent,canActivate:[AuthenticationGuard], children:[
     {path:'home',component:HomeComponent},
     {path:'calculator',component:CalculatorComponent},
     {path:'data-binding',component:DataBindingComponent},
@@ -46,7 +54,15 @@ const routes: Routes = [
     {path:'students',component:StudentComponent},
     {path:'createvehicle',component:CreateVehicleComponent},
     {path:"createstudents",component:CreateStudentsComponent},
-    {path:"adavancecalculator",component:AdavancecalculatorComponent}
+    {path:"adavancecalculator",component:AdavancecalculatorComponent},
+    {path:"mail",component:MailComponent},
+    {path:"vehicle-details/:id",component:VehicleDetailsComponent},
+    {path:"edit-vehicle/:id",component:CreateVehicleComponent},
+    {path:"Create-user",component:CreateUserComponent},
+    {path:"parent",component:ParentComponent},
+    {path:"product",component:ProductComponent},
+    {path:"navigator",component:NavigatorComponent},
+    {path:"cart",component:CartComponent}
     
     
   ]},

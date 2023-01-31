@@ -26,6 +26,15 @@ import { StudentComponent } from './student/student.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateStudentsComponent } from './create-students/create-students.component';
 import { AdavancecalculatorComponent } from './adavancecalculator/adavancecalculator.component';
+import { MailComponent } from './mail/mail.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { ProductComponent } from './product/product.component';
+import { NavigatorComponent } from './navigator/navigator.component';
+import { CartComponent } from './cart/cart.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +61,15 @@ import { AdavancecalculatorComponent } from './adavancecalculator/adavancecalcul
        CreateVehicleComponent,
        CreateStudentsComponent,
        AdavancecalculatorComponent,
+       MailComponent,
+       VehicleDetailsComponent,
+       CreateUserComponent,
+       ParentComponent,
+       ChildComponent,
+       ProductComponent,
+       NavigatorComponent,
+       CartComponent,
+       RatingComponent,
        
   ],
   imports: [

@@ -12,15 +12,15 @@ h1{
 }
 .form{
     text-align: center;
-    background-color: darkgoldenrod;
+    background-color: rgb(14, 190, 234);
     margin: auto;
     padding: 20px;
     border-radius: 20px;
-    width: 350px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
 }
 input{
-    width: 90%;
+    width: 100%;
     padding: 10px;
     border: 1px solid gray;
     margin: 5px;
@@ -33,7 +33,7 @@ button{
     background-color: bisque;
     padding: 5px;
     margin: 15px;
-    width: 55px;
+    width: 60px;
 }
 button:hover{
     background-color: rgb(65, 157, 237);
