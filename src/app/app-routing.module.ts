@@ -64,7 +64,11 @@ const routes: Routes = [
     {path:"product",component:ProductComponent},
     {path:"navigator",component:NavigatorComponent},
     {path:"cart",component:CartComponent},
-    {path:"about-company",component:AboutCompanyComponent},    
+    {path:"about-company",component:AboutCompanyComponent}, 
+    {
+      path: 'contact-us',
+      loadChildren: () => import('./contact-us/contact-us.module').then(m => m.ContactUsModule)
+    }   
     
   ]},
   {path:'',component:LoginComponent},
@@ -72,7 +76,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
